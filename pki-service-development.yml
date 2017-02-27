@@ -16,5 +16,5 @@ pkiHome: /home/pki/
 passinFile: /tmp/secret/passphrase.txt
 
 # Encrypted properties 
-secretkey: {cipher}0f23ba2eef4a2df1002cbdf04a45a15733466da44d91d2e0cdb73c9c3de18a0a
+secretkey: '{cipher}0f23ba2eef4a2df1002cbdf04a45a15733466da44d91d2e0cdb73c9c3de18a0a'
 
