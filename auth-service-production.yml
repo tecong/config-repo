@@ -1,6 +1,35 @@
+server:
+  port: 8080
+
 security:
+  ldap:
+    # AD domain to which user belongs.
+    # At AD the user is authenticated as user@domain
+    # The domain can be found at AD server.
+    domain: tecoprod.softlayer.local
+
+    # URL and port of the AD server
+    url: ldap://sln-prod-cs01.tecoprod.softlayer.local:389
+    org:
+      # Directory suffix or root for organization.
+      # For example if user's CN is:
+      # CN=TECO Developer,OU=TECO,OU=Customer,DC=tecoprod,DC=softlayer,DC=local
+      # then the root is:
+      # OU=Customer,DC=tecoprod,DC=softlayer,DC=local
+      root: OU=Customer,DC=tecoprod,DC=softlayer,DC=local
+
+  # Roles defined at Tecong AD
+  roles:
+    - TecongUSER
+    - TecongADMIN
+
   jwt:
-    key: {cipher}
+    key: '{cipher}12c2071217b8031c74843104d55726cba1905b992cc9af80382f6c73725a66dad4f373299ca3043534cd786f2b8ed1a5'
+
+logging:
+ level:
+   org.springframework.security: DEBUG
+
 
 
 

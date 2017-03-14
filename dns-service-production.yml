@@ -7,14 +7,14 @@ logging:
 
 softlayer:
   api:
-    username: {cipher}
-    key: {cipher}@pbot
+    username: '{cipher}807a0c6c323d36630000feb4ca98e2e73d104bec819aed274ce83a0383ba62e9'
+    key: '{cipher}90d15106bcdc3ce7f2d0be96bdb07697d1e0a40d4601983cea88a33cf0501923425459bff53c39e0ab1b43bf2476ff31d58a5e74d549ef69711374e02b9f3d2e3f1a7e7e40a9bcec82168781b20fb787e4f5b165d4c262b6ce60dde5c66efb0f'
     url: https://api.softlayer.com/xmlrpc/v3/
     timeout: 40
 
 security:
   jwt:
-    key: {cipher}
+    key: '{cipher}12c2071217b8031c74843104d55726cba1905b992cc9af80382f6c73725a66dad4f373299ca3043534cd786f2b8ed1a5'
 
 
 
