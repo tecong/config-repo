@@ -1,6 +1,10 @@
+logging:
+ level:
+   org.springframework.security: DEBUG
+
 security:
   jwt:
-    key: {cipher}06db5704ba878698473f422996a13143cec13d72fe7614452ef7f9a9b3a11ad2
+    key: '{cipher}06db5704ba878698473f422996a13143cec13d72fe7614452ef7f9a9b3a11ad2'
 
 
 
