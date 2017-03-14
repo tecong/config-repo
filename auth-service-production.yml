@@ -1,0 +1,6 @@
+security:
+  jwt:
+    key: {cipher}
+
+
+

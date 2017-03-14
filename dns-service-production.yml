@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+logging:
+ level:
+   org.springframework.security: DEBUG
+
+softlayer:
+  api:
+    username: {cipher}
+    key: {cipher}@pbot
+    url: https://api.softlayer.com/xmlrpc/v3/
+    timeout: 40
+
+security:
+  jwt:
+    key: {cipher}
+
+
+
